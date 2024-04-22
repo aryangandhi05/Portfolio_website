@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 import { mine } from "../assets";
+import { github, linkedin } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,6 +27,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const resumeLink =
+    "https://drive.google.com/file/d/1KUxvOo-fn0ZHUNAWvL8wYgBoB8_o4XvB/view?usp=sharing";
+  const githubLink = "https://github.com/aryangandhi05";
+  const linkedinLink = "https://www.linkedin.com/in/aryan-gandhi-740872225/";
+
   return (
     <nav
       className={`${
@@ -43,15 +49,24 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
           <img src={mine} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Aryan Gandhi &nbsp;
             <span className="sm:block hidden"> | My Canvas</span>
           </p>
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </li>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,6 +78,11 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+              My Resume
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -79,6 +99,20 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+              <li className="text-secondary text-[16px] font-medium cursor-pointer">
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </li>
+              <li className="text-secondary text-[16px] font-medium cursor-pointer">
+                <a
+                  href={linkedinLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -93,6 +127,11 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li className="text-secondary text-[16px] font-medium cursor-pointer">
+                <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+                  My Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>

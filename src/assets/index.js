@@ -37,6 +37,7 @@ import chegg from "./company/chegg.png";
 import digitalocean from "./company/digitalocean.png";
 import jiit from "./company/jiit.png";
 import mine from "./mine.png";
+import linkedin from "./linkedin.png";
 
 import localisation from "./localisation.png";
 import memegenerator from "./memegenerator.png";
@@ -87,4 +88,5 @@ export {
   jiit,
   mine,
   mernchatapp,
+  linkedin,
 };
