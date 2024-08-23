@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   const resumeLink =
-    "https://drive.google.com/file/d/1KUxvOo-fn0ZHUNAWvL8wYgBoB8_o4XvB/view?usp=sharing";
+    "https://drive.google.com/file/d/1hmaeZ5NDhdNOiJKm6j5O52xTFz368shf/view";
   const githubLink = "https://github.com/aryangandhi05";
   const linkedinLink = "https://www.linkedin.com/in/aryan-gandhi-740872225/";
 

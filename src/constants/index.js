@@ -5,8 +5,8 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
+  // html,
+  // css,
   reactjs,
   tailwind,
   nodejs,
@@ -17,9 +17,9 @@ import {
   memegenerator,
   newsresearch,
   mernchatapp,
-  threejs,
+  // threejs,
   cplus,
-  c,
+  // c,
   python,
   java,
   // redux,
@@ -65,20 +65,12 @@ const services = [
     icon: backend,
   },
   {
-    title: "Wordpress Developer",
+    title: "DevOps Developer",
     icon: creator,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -103,10 +95,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
