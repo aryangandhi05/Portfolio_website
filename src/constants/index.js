@@ -17,7 +17,7 @@ import {
   memegenerator,
   newsresearch,
   mernchatapp,
-  // threejs,
+  threejs,
   cplus,
   // c,
   python,
@@ -57,7 +57,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Python Developer",
+    title: "Data Analyst",
     icon: mobile,
   },
   {
@@ -65,7 +65,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "DevOps Developer",
+    title: "Devops Engineer",
     icon: creator,
   },
 ];
@@ -95,10 +95,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
   {
     name: "git",
     icon: git,
@@ -123,10 +123,10 @@ const technologies = [
     name: "Express JS",
     icon: expressjs,
   },
-  {
-    name: "Lanchain",
-    icon: langchain,
-  },
+  // {
+  //   name: "Lanchan",
+  //   icon: langchain,
+  // },
   {
     name: "Wordpress",
     icon: wordpress,
